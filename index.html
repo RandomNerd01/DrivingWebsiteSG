@@ -13,6 +13,11 @@
 
 
     <style>
+        #content {
+  height: 2000px; /* Height of the content to scroll through */
+  background-color: #f0f0f0;
+  padding: 20px;
+}
         /* Style the tab */
         .tab {
           overflow: hidden;
@@ -102,7 +107,14 @@
     <li>Longer waiting times for normal practical lessons due to competition for slots.</li>
     <li>Higher number of lessons required, potentially increasing overall cost.</li>
   </ul>
-
+<h3>Cost differences between all 3 Schools:</h3>
+        <a href="#" onclick="scrollDownAndVisit('https://getgo.sg/blog/driving-school-vs-private-driving-instructor-the-costs-to-getting-a-driving-licence-in-singapore-and-which-is-the-better-option-2022/', 500);">
+  <img src="lol.PNG" alt="">
+</a>
+<h3>Cost differences between School and Private(For Private, exact costs will vary from Instructor to Instructor):</h3>     
+        <a href="#" onclick="scrollDownAndVisit('https://getgo.sg/blog/driving-school-vs-private-driving-instructor-the-costs-to-getting-a-driving-licence-in-singapore-and-which-is-the-better-option-2022/', 500);">
+  <img src="lol1.PNG" alt="">
+</a>
 </div>
 <div id="resources" class="tabcontent">
     <h3>Theory Tests:</h3>
@@ -1500,6 +1512,18 @@
 
 
 <script>
+    function scrollDownAndVisit(url, amount) {
+  // Scroll down
+  window.scrollBy({
+    top: amount,
+    behavior: 'smooth' // For smooth scrolling effect
+  });
+  
+  // Visit the specified website after scrolling down
+  setTimeout(function() {
+    window.location.href = url;
+  }, 1000); // Adjust delay as needed (in milliseconds)
+}
     function openTab(evt, tabName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
