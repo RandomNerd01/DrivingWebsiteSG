@@ -1,12 +1,12 @@
 /* CSS to style the arrow icon */
 .arrow-link {
     position: fixed;
-    bottom: 20px;
-    left: 20px; /* Adjust as needed */
+    bottom: 1px;
+    left: 1px; /* Adjust as needed */
     z-index: 9999; /* Ensure the arrow appears on top of other content */
 }
 
 .arrow-icon {
-    width: 40px; /* Adjust size as needed */
+    width: 4px; /* Adjust size as needed */
     height: auto;
 }
