@@ -16,6 +16,19 @@
 
 
     <style>
+         .mobile-only {
+            display: none;
+        }
+
+        /* Mobile-specific styles */
+        @media only screen and (max-width: 768px) {
+            .desktop-only {
+                display: none;
+            }
+            .mobile-only {
+                display: block;
+            }
+        }
         #content {
   height: 2000px; /* Height of the content to scroll through */
   background-color: #f0f0f0;
@@ -1510,7 +1523,7 @@
     </div>
 </div>
 
-<div class="black-section">
+<div class="desktop-only black-section">
     <p>For any extra reviews or information I missed out on, pls  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lol891930@gmail.com" style="color: red;">Contact Me</a></p>
 </div>
 
