@@ -18,8 +18,18 @@
                 .then(response => response.text())
                 .then(data => {
                     document.getElementById('content').innerHTML = data;
+                    executeScripts(document.getElementById('content'));
                 })
                 .catch(error => console.error('Error loading content:', error));
+        }
+
+        function executeScripts(container) {
+            const scripts = container.querySelectorAll('script');
+            scripts.forEach(oldScript => {
+                const newScript = document.createElement('script');
+                newScript.textContent = oldScript.textContent;
+                oldScript.parentNode.replaceChild(newScript, oldScript);
+            });
         }
 
         if (isMobile()) {
